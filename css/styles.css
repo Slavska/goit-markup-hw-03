@@ -22,13 +22,13 @@
   --card-set-gap: 24px;
 }
 
+/*-----------------------COMPONENTS-----------------*/
 body {
   font-family: var(--primary-text-style);
   color: var(--primary-text-color-light-background);
   font-size: 16px;
 }
 
-/*-----------------------COMPONENTS-----------------*/
 h1,
 h2,
 h3,
@@ -47,6 +47,19 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+}
+
+a {
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 .list {
@@ -79,7 +92,7 @@ img {
   overflow: hidden;
 }
 
-.suptitle {
+.subtitle {
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
@@ -87,6 +100,15 @@ img {
 
   margin-bottom: 72px;
   text-align: center;
+}
+
+.under-subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
 }
 
 .container {
@@ -102,6 +124,30 @@ img {
   padding-bottom: 120px;
 }
 
+.text {
+  color: var(--secondary-text-color-light-background);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: var(--text-style-logo);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
 /*/-----------------------COMPONENTS-----------------*/
 
 /*---------------------------HEADER-------------------------*/
@@ -125,14 +171,7 @@ img {
 }
 
 .logo-light-background {
-  text-decoration: none;
-  font-family: var(--text-style-logo);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  text-transform: uppercase;
   color: var(--primary-text-color-light-background);
-  letter-spacing: 0.03em;
 
   margin-right: 76px;
 }
@@ -168,9 +207,6 @@ img {
 
 .address-link {
   font-style: normal;
-  color: var(--secondary-text-color-light-background);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .address-link:hover,
@@ -198,16 +234,8 @@ img {
 }
 
 .hero-button {
-  letter-spacing: 0.04em;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--primary-text-color-dark-background);
-  font-weight: 500;
   background-color: var(--secondary-color-accent);
-  border-radius: 4px;
-  cursor: pointer;
-
+  color: var(--primary-text-color-dark-background);
   padding: 16px 31px;
 }
 
@@ -234,21 +262,6 @@ img {
 
 .advantages-item {
   flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
-}
-
-.advantages-suptitle {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-
-  margin-bottom: 8px;
-}
-
-.advantages-text {
-  color: var(--secondary-text-color-light-background);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /*/---------------------------ADVANTAGES-SECTION------------------------*/
@@ -291,21 +304,6 @@ img {
   flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
 
-.team-suptitle {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-
-  margin-bottom: 8px;
-}
-
-.team-position {
-  color: var(--secondary-text-color-light-background);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
 .team-card-wrapper {
   text-align: center;
   padding-top: 32px;
@@ -332,15 +330,9 @@ img {
 }
 
 .projects-button {
-  font-family: inherit;
   color: var(--secondary-color-accent);
-  font-weight: 500;
   background: var(--secondary-light-background);
   border: 1px solid var(--secondary-text-color-dark-background);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 
   padding: 12px 24px;
 }
@@ -349,8 +341,6 @@ img {
 .projects-button:focus {
   background-color: var(--secondary-color-accent);
   color: var(--primary-light-background);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .projects-objects {
@@ -364,21 +354,6 @@ img {
   padding-bottom: 32px;
   border: 1px solid var(--border-wrapper-color);
   padding-left: 16px;
-}
-
-.projects-suptitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-
-  margin-bottom: 8px;
-}
-
-.projects-type {
-  color: var(--secondary-text-color-light-background);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /*/-----------------------PROJECTS-SECTION------------------------*/
@@ -397,20 +372,11 @@ img {
 }
 
 .logo-dark-background {
-  text-decoration: none;
-  font-family: var(--text-style-logo);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  text-transform: uppercase;
   color: var(--primary-text-color-dark-background);
-  letter-spacing: 0.03em;
 }
 
 .footer-text {
   color: var(--secondary-text-color-dark-background);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 
   margin-top: 16px;
 }
