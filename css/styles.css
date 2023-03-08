@@ -27,7 +27,7 @@
 body {
   font-family: var(--primary-text-style);
   color: var(--primary-text-color-light-background);
-  font-size: 16px;
+  background-color: (var(--primary-light-background));
 }
 
 h1,
@@ -138,6 +138,7 @@ address {
   line-height: 1.5;
   font-weight: 500;
   border-radius: 4px;
+  border: none;
 }
 
 .logo {
@@ -154,9 +155,6 @@ address {
 /*---------------------------HEADER-------------------------*/
 
 .page-header {
-  background-color: var(--primary-light-background);
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--border-wrapper-color);
 }
 
@@ -191,6 +189,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
+  display: block;
+  padding: 24px 0;
 }
 
 .menu-link.current {
@@ -207,7 +207,9 @@ address {
 }
 
 .address-link {
+  display: block;
   font-style: normal;
+  padding: 24px 0;
 }
 
 .address-link:hover,
@@ -224,13 +226,6 @@ address {
   padding-bottom: 188px;
 }
 
-.page-hero .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
@@ -238,14 +233,18 @@ address {
   letter-spacing: 0.02em;
 
   text-align: center;
-  max-width: 496px;
-  margin-bottom: 47px;
+  width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
   background-color: var(--secondary-color-accent);
   color: var(--primary-text-color-dark-background);
-  padding: 16px 31px;
+  padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -257,15 +256,8 @@ address {
 
 /*---------------------------ADVANTAGES-SECTION------------------------*/
 
-.page-advantages {
-  background-color: var(--primary-light-background);
-  padding-bottom: 60px;
-}
-
 .advantages-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   gap: var(--card-set-gap);
 }
 
@@ -278,19 +270,12 @@ address {
 /*---------------------------WORKS-SECTION-----------------------*/
 
 .page-works {
-  background-color: var(--primary-light-background);
-  padding-top: 60px;
+  padding-top: 0;
 }
 
 .works-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   gap: var(--card-set-gap);
-}
-
-.works-item {
-  flex-basis: calc((100%- 2 * var(--card-set-gap)) / 3);
 }
 
 /*/---------------------------WORKS-SECTION-----------------------*/
@@ -303,14 +288,14 @@ address {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   gap: var(--card-set-gap);
 }
 
 .team-item {
   background-color: var(--primary-light-background);
-  flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-wrapper {
@@ -323,13 +308,11 @@ address {
 /*-----------------------PROJECTS-SECTION------------------------*/
 
 .page-projects {
-  background-color: var(--primary-light-background);
   padding-top: 96px;
 }
 
 .projects-filtr {
   display: flex;
-  align-items: center;
   margin-bottom: 72px;
   justify-content: center;
 }
@@ -355,7 +338,7 @@ address {
 .projects-objects {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--card-set-gap);
+  gap: 48px var(--card-set-gap);
 }
 
 .projects-wrapper {
@@ -363,6 +346,7 @@ address {
   padding-bottom: 32px;
   border: 1px solid var(--border-wrapper-color);
   padding-left: 16px;
+  border-top: none;
 }
 
 /*/-----------------------PROJECTS-SECTION------------------------*/
@@ -373,11 +357,10 @@ address {
   background-color: var(--primary-dark-background);
   padding-top: 100px;
   padding-bottom: 100px;
-  border: 1px solid var(--border-color);
 }
 
-.footer-about {
-  max-width: 264px;
+.footer-text {
+  width: 264px;
 }
 
 .logo-dark-background {
