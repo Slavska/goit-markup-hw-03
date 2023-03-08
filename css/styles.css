@@ -237,6 +237,8 @@ address {
   color: var(--primary-text-color-dark-background);
   letter-spacing: 0.02em;
 
+  text-align: center;
+  max-width: 496px;
   margin-bottom: 47px;
 }
 
