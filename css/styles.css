@@ -23,6 +23,7 @@
 }
 
 /*-----------------------COMPONENTS-----------------*/
+
 body {
   font-family: var(--primary-text-style);
   color: var(--primary-text-color-light-background);
@@ -219,9 +220,15 @@ address {
 /*---------------------------HERO-------------------------*/
 .page-hero {
   background: var(--primary-dark-background);
-  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+}
+
+.page-hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-title {
