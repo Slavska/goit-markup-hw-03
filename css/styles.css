@@ -360,10 +360,6 @@ address {
   padding-bottom: 100px;
 }
 
-.footer-text {
-  width: 264px;
-}
-
 .logo-dark-background {
   color: var(--primary-text-color-dark-background);
 }
@@ -372,6 +368,7 @@ address {
   color: var(--secondary-text-color-dark-background);
 
   margin-top: 16px;
+  width: 264px;
 }
 
 /*/---------------------------FOOTER-----------------------*/
